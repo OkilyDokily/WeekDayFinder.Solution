@@ -10,7 +10,24 @@ namespace WeekdayFinderTests
     {
         [TestMethod]
         public void dayOfWeek_ReturnDayOfWeek_True(){
-            string str = Finder.dayOfWeek("7/11/2014");
+            string str = Finder.DayOfWeek("7/11/2014");
+            Assert.AreEqual(str,"Friday");
+        }
+         [TestMethod]
+           public void dayOfWeek_ReturnDayOfWeek2_True(){
+            string str = Finder.DayOfWeek("07/11/2014");
+            Assert.AreEqual(str,"Friday");
+        }
+
+         [TestMethod]
+           public void dayOfWeek_ReturnDayOfWeek3_True(){
+            string str = Finder.DayOfWeek("07/11/14");
+            Assert.AreEqual(str,"Friday");
+        }
+
+          [TestMethod]
+           public void dayOfWeek_ReturnDayOfWeek4_True(){
+            string str = Finder.DayOfWeek("07-11-14");
             Assert.AreEqual(str,"Friday");
         }
     }
