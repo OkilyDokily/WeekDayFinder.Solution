@@ -9,9 +9,9 @@ namespace WeekdayFinderTests
     public class FinderTests
     {
         [TestMethod]
-        public void FinderObject_MakeFinderObject_True(){
-            Finder f = new Finder();
-            Assert.AreEqual(typeof(Finder),f.GetType());
+        public void dayOfWeek_ReturnDayOfWeek_True(){
+            string str = Finder.dayOfWeek("7/11/2014");
+            Assert.AreEqual(str,"Friday");
         }
     }
 }
