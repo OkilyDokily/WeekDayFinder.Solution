@@ -15,7 +15,9 @@ _Returns the day of week based on inputted date_
 ## Setup/Installation Requirements
 
 ## Specs
-
+| Specs | Input | Output |
+|-|-|-|
+| create a static function that returns the day for inputted date | Finder.DayOfWeek("7/11/2014") | "Friday" |
 
 ## Known Bugs
 
